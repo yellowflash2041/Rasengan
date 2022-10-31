@@ -8,571 +8,235 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Rasengan!</title>
-  <meta name="description" content="Rasengan!">
+  <title>Spiral Flash Super Circle Light Third</title>
+  <meta name="description" content="Spiral Flash Super Circle Light Third">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="styles.css">
+  <style>
+    /** TODO: Should consider switching to a canvas for less performant CPUs/mobile devices. */
+    body {
+      height: 100vh;
+      width: 100vw;
+      min-width: 500px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+    }
+
+    .spiral-circle,
+    .mana {
+      width: 500px;
+      height: 500px;
+    }
+
+    .spiral-circle {
+      position: relative;
+      border-radius: 100%;
+    }
+
+    .mana {
+      position: absolute;
+      transform: rotateX(80deg);
+    }
+
+    .mana-thread {
+      width: 100%;
+      height: 100%;
+      border-width: 4px 2px 1px 1px;
+      border-color: #fff #fff #fff #e2e211;
+      border-style: solid;
+      border-radius: 100%;
+      animation-name: rotate;
+      animation-duration: 0.75s;
+      animation-timing-function: linear;
+      animation-iteration-count: infinite;
+      will-change: transform;
+    }
+
+    @keyframes rotate {
+      0% {
+        transform: rotate(0deg);
+      }
+
+      100% {
+        transform: rotate(-360deg);
+      }
+    }
+  </style>
 </head>
 
 <body>
   <!--[if lt IE 7]>
-      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
-    <![endif]-->
-  <div class="rasengan">
-    <div class="rasengan__outer">
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
-      <div class="outer-flash"></div>
+    <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+  <![endif]-->
+  <div class="spiral-circle">
+    <div class="mana">
+      <div class="mana-thread"></div>
     </div>
-    <div class="chakra">
-      <div class="chakra-thread"></div>
+    <div class="mana">
+      <div class="mana-thread"></div>
     </div>
-    <div class="chakra">
-      <div class="chakra-thread"></div>
+    <div class="mana">
+      <div class="mana-thread"></div>
     </div>
-    <div class="chakra">
-      <div class="chakra-thread"></div>
+    <div class="mana">
+      <div class="mana-thread"></div>
     </div>
-    <div class="chakra">
-      <div class="chakra-thread"></div>
+    <div class="mana">
+      <div class="mana-thread"></div>
     </div>
-    <div class="chakra">
-      <div class="chakra-thread"></div>
+    <div class="mana">
+      <div class="mana-thread"></div>
     </div>
-    <div class="chakra">
-      <div class="chakra-thread"></div>
+    <div class="mana">
+      <div class="mana-thread"></div>
     </div>
-    <div class="chakra">
-      <div class="chakra-thread"></div>
+    <div class="mana">
+      <div class="mana-thread"></div>
     </div>
-    <div class="chakra">
-      <div class="chakra-thread"></div>
+    <div class="mana">
+      <div class="mana-thread"></div>
     </div>
-    <div class="chakra">
-      <div class="chakra-thread"></div>
+    <div class="mana">
+      <div class="mana-thread"></div>
     </div>
-    <div class="chakra">
-      <div class="chakra-thread"></div>
+    <div class="mana">
+      <div class="mana-thread"></div>
     </div>
-    <div class="chakra">
-      <div class="chakra-thread"></div>
+    <div class="mana">
+      <div class="mana-thread"></div>
     </div>
-    <div class="chakra">
-      <div class="chakra-thread"></div>
+    <div class="mana">
+      <div class="mana-thread"></div>
     </div>
-    <div class="chakra">
-      <div class="chakra-thread"></div>
+    <div class="mana">
+      <div class="mana-thread"></div>
     </div>
-    <div class="chakra">
-      <div class="chakra-thread"></div>
+    <div class="mana">
+      <div class="mana-thread"></div>
     </div>
-    <div class="chakra">
-      <div class="chakra-thread"></div>
+    <div class="mana">
+      <div class="mana-thread"></div>
     </div>
-    <div class="chakra">
-      <div class="chakra-thread"></div>
+    <div class="mana">
+      <div class="mana-thread"></div>
     </div>
-    <div class="chakra">
-      <div class="chakra-thread"></div>
+    <div class="mana">
+      <div class="mana-thread"></div>
     </div>
-    <div class="chakra">
-      <div class="chakra-thread"></div>
+    <div class="mana">
+      <div class="mana-thread"></div>
     </div>
-    <div class="chakra">
-      <div class="chakra-thread"></div>
+    <div class="mana">
+      <div class="mana-thread"></div>
     </div>
-    <div class="chakra">
-      <div class="chakra-thread"></div>
+    <div class="mana">
+      <div class="mana-thread"></div>
     </div>
-    <div class="chakra">
-      <div class="chakra-thread"></div>
+    <div class="mana">
+      <div class="mana-thread"></div>
     </div>
-    <div class="chakra">
-      <div class="chakra-thread"></div>
+    <div class="mana">
+      <div class="mana-thread"></div>
     </div>
-    <div class="chakra">
-      <div class="chakra-thread"></div>
+    <div class="mana">
+      <div class="mana-thread"></div>
     </div>
-    <div class="chakra">
-      <div class="chakra-thread"></div>
+    <div class="mana">
+      <div class="mana-thread"></div>
     </div>
-    <div class="chakra">
-      <div class="chakra-thread"></div>
+    <div class="mana">
+      <div class="mana-thread"></div>
     </div>
-    <div class="chakra">
-      <div class="chakra-thread"></div>
+    <div class="mana">
+      <div class="mana-thread"></div>
     </div>
-    <div class="chakra">
-      <div class="chakra-thread"></div>
+    <div class="mana">
+      <div class="mana-thread"></div>
     </div>
-    <div class="chakra">
-      <div class="chakra-thread"></div>
+    <div class="mana">
+      <div class="mana-thread"></div>
     </div>
-    <div class="chakra">
-      <div class="chakra-thread"></div>
+    <div class="mana">
+      <div class="mana-thread"></div>
     </div>
-    <div class="chakra">
-      <div class="chakra-thread"></div>
+    <div class="mana">
+      <div class="mana-thread"></div>
     </div>
-    <div class="chakra">
-      <div class="chakra-thread"></div>
+    <div class="mana">
+      <div class="mana-thread"></div>
     </div>
-    <div class="chakra">
-      <div class="chakra-thread"></div>
+    <div class="mana">
+      <div class="mana-thread"></div>
     </div>
-    <div class="chakra">
-      <div class="chakra-thread"></div>
+    <div class="mana">
+      <div class="mana-thread"></div>
     </div>
-    <div class="chakra">
-      <div class="chakra-thread"></div>
+    <div class="mana">
+      <div class="mana-thread"></div>
     </div>
-    <div class="chakra">
-      <div class="chakra-thread"></div>
+    <div class="mana">
+      <div class="mana-thread"></div>
     </div>
-    <div class="chakra">
-      <div class="chakra-thread"></div>
+    <div class="mana">
+      <div class="mana-thread"></div>
     </div>
-    <div class="chakra">
-      <div class="chakra-thread"></div>
+    <div class="mana">
+      <div class="mana-thread"></div>
     </div>
-    <div class="chakra">
-      <div class="chakra-thread"></div>
+    <div class="mana">
+      <div class="mana-thread"></div>
     </div>
-    <div class="chakra">
-      <div class="chakra-thread"></div>
+    <div class="mana">
+      <div class="mana-thread"></div>
     </div>
-    <div class="chakra">
-      <div class="chakra-thread"></div>
+    <div class="mana">
+      <div class="mana-thread"></div>
     </div>
-    <div class="chakra">
-      <div class="chakra-thread"></div>
+    <div class="mana">
+      <div class="mana-thread"></div>
     </div>
-    <div class="chakra">
-      <div class="chakra-thread"></div>
+    <div class="mana">
+      <div class="mana-thread"></div>
     </div>
-    <div class="chakra">
-      <div class="chakra-thread"></div>
+    <div class="mana">
+      <div class="mana-thread"></div>
     </div>
-    <div class="chakra">
-      <div class="chakra-thread"></div>
+    <div class="mana">
+      <div class="mana-thread"></div>
     </div>
-    <div class="chakra">
-      <div class="chakra-thread"></div>
+    <div class="mana">
+      <div class="mana-thread"></div>
     </div>
-    <div class="chakra">
-      <div class="chakra-thread"></div>
+    <div class="mana">
+      <div class="mana-thread"></div>
     </div>
-    <div class="chakra">
-      <div class="chakra-thread"></div>
+    <div class="mana">
+      <div class="mana-thread"></div>
     </div>
-    <div class="chakra">
-      <div class="chakra-thread"></div>
+    <div class="mana">
+      <div class="mana-thread"></div>
     </div>
-    <div class="chakra">
-      <div class="chakra-thread"></div>
-    </div>
-    <div class="chakra">
-      <div class="chakra-thread"></div>
+    <div class="mana">
+      <div class="mana-thread"></div>
     </div>
   </div>
-  <script src="script.js" async defer></script>
+  <script>
+    const manaThreads = document.querySelectorAll(".mana");
+
+    manaThreads.forEach((val, index) => {
+      let rotation = Math.floor(Math.random() * (180 - 10 + 1) + 10);
+      let rotationY = Math.floor(Math.random() * (180 - 10 + 1) + 10);
+      let rotationZ = Math.floor(Math.random() * 180);
+
+      let size = Math.floor(Math.random() * (500 - 425 + 1) + 425);
+
+      val.style.width = size + "px";
+      val.style.height = size + "px";
+      val.style.padding = (500 - size) / 2 + "px";
+      val.style.transform = `rotateX(${rotation}deg) rotateY(${rotationY}deg) rotateZ(${rotationZ}deg)`;
+    });
+  </script>
 </body>
 
 </html>
